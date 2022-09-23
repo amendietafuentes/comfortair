@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFBoldRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF Demi';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFDemiBoldRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFDemiBoldRegular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF Extra';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFExtraBoldItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFHeavyRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFHeavyRegular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFHeavyItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFHeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF Demi';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFDemiBoldItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFDemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF Extra';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFExtraBoldRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFExtraBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFBoldItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFLightItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFMediumRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFMediumRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFLightRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFLightRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFThinItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFThinRegular.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFThinRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    src: url('../fonts/FONTSPRINGDEMO-VisbyCFMediumItalic.woff2') format('woff2'), url('../fonts/FONTSPRINGDEMO-VisbyCFMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+// Custom .scss
+// Option A; Include all of Bootstrap Framework
+@import "./bootstrap/scss/bootstrap";
+
+/***********
+* Add custom style theme
+************/
+
+body {
+    font-family: 'FONTSPRING DEMO - Visby CF';
+    font-weight: bold;
+    font-style: normal;
+}

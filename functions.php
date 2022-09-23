@@ -141,6 +141,9 @@ function comfort_air_scripts() {
 	wp_enqueue_style( 'comfort-air-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'comfort-air-style', 'rtl', 'replace' );
 
+	// Added main style comfort theme
+	wp_enqueue_style( 'comfort-air-main', get_stylesheet_directory_uri() . '/css/main.css', array(), _S_VERSION );
+
 	wp_enqueue_script( 'comfort-air-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -148,6 +151,19 @@ function comfort_air_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'comfort_air_scripts' );
+
+
+/**
+ * Implement the Custom fonts theme comfort air.
+ */
+function enqueue_custom_fonts(){
+	if(!is_admin()){
+		wp_register_style('name_font', 'url_font');
+		wp_enqueue_style('name_font');
+	}
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_custom_fonts');
 
 /**
  * Implement the Custom Header feature.
