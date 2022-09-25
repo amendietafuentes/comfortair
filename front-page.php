@@ -17,8 +17,18 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<?php
+						echo do_shortcode('[smartslider3 slider="2"]');
+					?>
+				</div>
+			</div>
+		</div>
+
 		<?php
-		while ( have_posts() ) :
+		/*while ( have_posts() ) :
 			the_post();
 
 			get_template_part( 'template-parts/content', 'page' );
@@ -28,7 +38,7 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
+		endwhile; */// End of the loop.
 		?>
 
 	</main><!-- #main -->

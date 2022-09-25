@@ -143,6 +143,8 @@ function comfort_air_scripts() {
 
 	// Added main style comfort theme
 	wp_enqueue_style( 'comfort-air-main', get_stylesheet_directory_uri() . '/css/main.css', array(), _S_VERSION );
+	// Added icons bootstrap to comfort theme
+	wp_enqueue_style( 'comfort-air-bootstrap-icons',  'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'comfort-air-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
