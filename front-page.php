@@ -41,6 +41,16 @@ get_header();
 		endwhile; */// End of the loop.
 		?>
 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 pt-5 pb-5">
+					<?php
+						echo do_shortcode('[sp_wpcarousel id="71"]');
+					?>
+				</div>
+			</div>
+		</div>
+
 	</main><!-- #main -->
 
 <?php
