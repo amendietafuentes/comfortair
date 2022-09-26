@@ -194,3 +194,76 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Footer widget Communities One
+ */
+
+function custom_footer_communities_widget_one(){
+	$args = array(
+		'id' 				=> 'footer-widget-communities-col-one',
+		'name' 				=> __('Footer Communities Column One' , 'text_domain'),
+		'description' 		=> __('Column One', 'text_domain'),
+		'before_title'	 	=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'		=> '</div>'
+	);
+	register_sidebar( $args );
+ }
+
+ add_action('widgets_init', 'custom_footer_communities_widget_one');
+
+/**
+ * Footer widget Communities Two
+ */
+ function custom_footer_communities_widget_two(){
+	$args = array(
+		'id' 				=> 'footer-widget-communities-col-two',
+		'name' 				=> __('Footer Communities Column Two' , 'text_domain'),
+		'description' 		=> __('Column Two', 'text_domain'),
+		'before_title'	 	=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'		=> '</div>'
+	);
+	register_sidebar( $args );
+ }
+
+ add_action('widgets_init', 'custom_footer_communities_widget_two');
+
+/**
+ * Footer widget Quick Menu One
+ */
+ function custom_footer_quick_menu_widget_one(){
+	$args = array(
+		'id' 				=> 'footer-widget-quick-menu-col-one',
+		'name' 				=> __('Footer Quick Menu Column One' , 'text_domain'),
+		'description' 		=> __('Column One', 'text_domain'),
+		'before_title'	 	=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'		=> '</div>'
+	);
+	register_sidebar( $args );
+ }
+
+ add_action('widgets_init', 'custom_footer_quick_menu_widget_one');
+
+
+ /**
+ * Footer widget Contact Menu One
+ */
+function custom_footer_contact_menu_widget_one(){
+	$args = array(
+		'id' 				=> 'footer-widget-contact-menu-col-one',
+		'name' 				=> __('Footer Contact Menu Column One' , 'text_domain'),
+		'description' 		=> __('Column One', 'text_domain'),
+		'before_title'	 	=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'		=> '</div>'
+	);
+	register_sidebar( $args );
+ }
+
+ add_action('widgets_init', 'custom_footer_contact_menu_widget_one');
