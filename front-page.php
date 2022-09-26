@@ -28,7 +28,7 @@ get_header();
 		</div>
 
 		<?php
-		/*while ( have_posts() ) :
+		while ( have_posts() ) :
 			the_post();
 
 			get_template_part( 'template-parts/content', 'page' );
@@ -38,7 +38,7 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; */// End of the loop.
+		endwhile; // End of the loop.
 		?>
 
 		<section id="blog-recent-posts">
@@ -92,7 +92,21 @@ get_header();
 				</div>
 			</div>
 		</section>
-
+		
+		<section class="shedule-service-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<?php 
+							$homeShuduleServiceBanner = get_field('homepage_shedule_service_banner');
+						?>
+						<a href="tel: <?php the_field('shedule_service_phone_number'); ?>">
+							<img class="img-responsive" src="<?php echo $homeShuduleServiceBanner['url']; ?>" alt="Shedule Service" title="Shedule Service">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<div class="container">
 			<div class="row">

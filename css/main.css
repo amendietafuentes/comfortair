@@ -145,11 +145,17 @@
   --bs-gray: #8c94a3;
   --bs-secondary: rgb(10, 69, 143);
   --bs-gray-border: #d1d1d1;
+  --bs-color-footer-copyright: #001a3a;
+  --bs-color-footer-site-info: #001536;
+  --bs-bg-color-contact-footer-menu: #002c63;
   --bs-icon-background: rgb(230, 30, 55);
   --bs-primary-rgb: 230, 30, 55;
   --bs-gray-rgb: 140, 148, 163;
   --bs-secondary-rgb: 10, 69, 143;
   --bs-gray-border-rgb: 209, 209, 209;
+  --bs-color-footer-copyright-rgb: 0, 26, 58;
+  --bs-color-footer-site-info-rgb: 0, 21, 54;
+  --bs-bg-color-contact-footer-menu-rgb: 0, 44, 99;
   --bs-icon-background-rgb: 230, 30, 55;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -3064,6 +3070,57 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #d1d1d1;
 }
 
+.btn-color-footer-copyright {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #001a3a;
+  --bs-btn-border-color: #001a3a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #001631;
+  --bs-btn-hover-border-color: #00152e;
+  --bs-btn-focus-shadow-rgb: 38, 60, 88;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00152e;
+  --bs-btn-active-border-color: #00142c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #001a3a;
+  --bs-btn-disabled-border-color: #001a3a;
+}
+
+.btn-color-footer-site-info {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #001536;
+  --bs-btn-border-color: #001536;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #00122e;
+  --bs-btn-hover-border-color: #00112b;
+  --bs-btn-focus-shadow-rgb: 38, 56, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00112b;
+  --bs-btn-active-border-color: #001029;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #001536;
+  --bs-btn-disabled-border-color: #001536;
+}
+
+.btn-bg-color-contact-footer-menu {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #002c63;
+  --bs-btn-border-color: #002c63;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #002554;
+  --bs-btn-hover-border-color: #00234f;
+  --bs-btn-focus-shadow-rgb: 38, 76, 122;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00234f;
+  --bs-btn-active-border-color: #00214a;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #002c63;
+  --bs-btn-disabled-border-color: #002c63;
+}
+
 .btn-icon-background {
   --bs-btn-color: #fff;
   --bs-btn-bg: rgb(230, 30, 55);
@@ -3146,6 +3203,57 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #d1d1d1;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #d1d1d1;
+  --bs-gradient: none;
+}
+
+.btn-outline-color-footer-copyright {
+  --bs-btn-color: #001a3a;
+  --bs-btn-border-color: #001a3a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #001a3a;
+  --bs-btn-hover-border-color: #001a3a;
+  --bs-btn-focus-shadow-rgb: 0, 26, 58;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #001a3a;
+  --bs-btn-active-border-color: #001a3a;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #001a3a;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #001a3a;
+  --bs-gradient: none;
+}
+
+.btn-outline-color-footer-site-info {
+  --bs-btn-color: #001536;
+  --bs-btn-border-color: #001536;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #001536;
+  --bs-btn-hover-border-color: #001536;
+  --bs-btn-focus-shadow-rgb: 0, 21, 54;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #001536;
+  --bs-btn-active-border-color: #001536;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #001536;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #001536;
+  --bs-gradient: none;
+}
+
+.btn-outline-bg-color-contact-footer-menu {
+  --bs-btn-color: #002c63;
+  --bs-btn-border-color: #002c63;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #002c63;
+  --bs-btn-hover-border-color: #002c63;
+  --bs-btn-focus-shadow-rgb: 0, 44, 99;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #002c63;
+  --bs-btn-active-border-color: #002c63;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #002c63;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #002c63;
   --bs-gradient: none;
 }
 
@@ -4742,6 +4850,33 @@ textarea.form-control-lg {
   color: #434343;
 }
 
+.alert-color-footer-copyright {
+  --bs-alert-color: #001023;
+  --bs-alert-bg: #ccd1d8;
+  --bs-alert-border-color: #b3bac4;
+}
+.alert-color-footer-copyright .alert-link {
+  color: #000d1c;
+}
+
+.alert-color-footer-site-info {
+  --bs-alert-color: #000d20;
+  --bs-alert-bg: #ccd0d7;
+  --bs-alert-border-color: #b3b9c3;
+}
+.alert-color-footer-site-info .alert-link {
+  color: #000a1a;
+}
+
+.alert-bg-color-contact-footer-menu {
+  --bs-alert-color: #001a3b;
+  --bs-alert-bg: #ccd5e0;
+  --bs-alert-border-color: #b3c0d0;
+}
+.alert-bg-color-contact-footer-menu .alert-link {
+  color: #00152f;
+}
+
 .alert-icon-background {
   --bs-alert-color: #8a1221;
   --bs-alert-bg: #fad2d7;
@@ -5105,6 +5240,48 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #545454;
   border-color: #545454;
+}
+
+.list-group-item-color-footer-copyright {
+  color: #001023;
+  background-color: #ccd1d8;
+}
+.list-group-item-color-footer-copyright.list-group-item-action:hover, .list-group-item-color-footer-copyright.list-group-item-action:focus {
+  color: #001023;
+  background-color: #b8bcc2;
+}
+.list-group-item-color-footer-copyright.list-group-item-action.active {
+  color: #fff;
+  background-color: #001023;
+  border-color: #001023;
+}
+
+.list-group-item-color-footer-site-info {
+  color: #000d20;
+  background-color: #ccd0d7;
+}
+.list-group-item-color-footer-site-info.list-group-item-action:hover, .list-group-item-color-footer-site-info.list-group-item-action:focus {
+  color: #000d20;
+  background-color: #b8bbc2;
+}
+.list-group-item-color-footer-site-info.list-group-item-action.active {
+  color: #fff;
+  background-color: #000d20;
+  border-color: #000d20;
+}
+
+.list-group-item-bg-color-contact-footer-menu {
+  color: #001a3b;
+  background-color: #ccd5e0;
+}
+.list-group-item-bg-color-contact-footer-menu.list-group-item-action:hover, .list-group-item-bg-color-contact-footer-menu.list-group-item-action:focus {
+  color: #001a3b;
+  background-color: #b8c0ca;
+}
+.list-group-item-bg-color-contact-footer-menu.list-group-item-action.active {
+  color: #fff;
+  background-color: #001a3b;
+  border-color: #001a3b;
 }
 
 .list-group-item-icon-background {
@@ -6699,6 +6876,21 @@ textarea.form-control-lg {
   background-color: RGBA(209, 209, 209, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-color-footer-copyright {
+  color: #fff !important;
+  background-color: RGBA(0, 26, 58, var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-color-footer-site-info {
+  color: #fff !important;
+  background-color: RGBA(0, 21, 54, var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-bg-color-contact-footer-menu {
+  color: #fff !important;
+  background-color: RGBA(0, 44, 99, var(--bs-bg-opacity, 1)) !important;
+}
+
 .text-bg-icon-background {
   color: #fff !important;
   background-color: RGBA(230, 30, 55, var(--bs-bg-opacity, 1)) !important;
@@ -6730,6 +6922,27 @@ textarea.form-control-lg {
 }
 .link-gray-border:hover, .link-gray-border:focus {
   color: #dadada !important;
+}
+
+.link-color-footer-copyright {
+  color: #001a3a !important;
+}
+.link-color-footer-copyright:hover, .link-color-footer-copyright:focus {
+  color: #00152e !important;
+}
+
+.link-color-footer-site-info {
+  color: #001536 !important;
+}
+.link-color-footer-site-info:hover, .link-color-footer-site-info:focus {
+  color: #00112b !important;
+}
+
+.link-bg-color-contact-footer-menu {
+  color: #002c63 !important;
+}
+.link-bg-color-contact-footer-menu:hover, .link-bg-color-contact-footer-menu:focus {
+  color: #00234f !important;
 }
 
 .link-icon-background {
@@ -7191,6 +7404,21 @@ textarea.form-control-lg {
 .border-gray-border {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-gray-border-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-color-footer-copyright {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-color-footer-copyright-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-color-footer-site-info {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-color-footer-site-info-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-bg-color-contact-footer-menu {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-bg-color-contact-footer-menu-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-icon-background {
@@ -8040,6 +8268,21 @@ textarea.form-control-lg {
   color: rgba(var(--bs-gray-border-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-color-footer-copyright {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-color-footer-copyright-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-color-footer-site-info {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-color-footer-site-info-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-bg-color-contact-footer-menu {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-bg-color-contact-footer-menu-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-icon-background {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-icon-background-rgb), var(--bs-text-opacity)) !important;
@@ -8114,6 +8357,21 @@ textarea.form-control-lg {
 .bg-gray-border {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-gray-border-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-color-footer-copyright {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-color-footer-copyright-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-color-footer-site-info {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-color-footer-site-info-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-bg-color-contact-footer-menu {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-bg-color-contact-footer-menu-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-icon-background {
@@ -10929,4 +11187,80 @@ a.call-to-action {
 }
 .recent-post .content .excerpt-post {
   font-family: "FONTSPRING DEMO - Visby CF Light Regular";
+}
+
+/***********
+* Add custom style footer
+************/
+.site-footer {
+  color: #FFFFFF;
+  padding: 0.5rem 0;
+}
+.site-footer .site-info {
+  background-color: var(--bs-color-footer-site-info);
+}
+.site-footer .site-info h4, .site-footer .site-info .h4 {
+  font-size: 1.75rem;
+}
+.site-footer .site-info h4.title-communities-col-one, .site-footer .site-info .title-communities-col-one.h4 {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+}
+.site-footer .site-info #menu-communities-nav-one,
+.site-footer .site-info #menu-communities-nav-two,
+.site-footer .site-info #menu-primary-menu {
+  list-style-type: square;
+  padding-top: 2.5rem !important;
+}
+.site-footer .site-info #menu-communities-nav-one li,
+.site-footer .site-info #menu-communities-nav-two li,
+.site-footer .site-info #menu-primary-menu li {
+  color: #FFFFFF;
+  padding: 0.5rem 0;
+}
+.site-footer .site-info #menu-communities-nav-one li a,
+.site-footer .site-info #menu-communities-nav-two li a,
+.site-footer .site-info #menu-primary-menu li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+  font-family: "FONTSPRING DEMO - Visby CF Light Regular";
+}
+.site-footer .site-info #menu-communities-nav-one li a:hover,
+.site-footer .site-info #menu-communities-nav-two li a:hover,
+.site-footer .site-info #menu-primary-menu li a:hover {
+  text-decoration: underline;
+}
+.site-footer .site-info .contact-footer-col-menu {
+  background-color: var(--bs-bg-color-contact-footer-menu);
+}
+.site-footer .site-info .contact-footer-col-menu .address-contact {
+  font-family: "FONTSPRING DEMO - Visby CF Light Regular";
+  margin: 0.5rem 0;
+}
+.site-footer .site-info .contact-footer-col-menu .address-contact p {
+  margin-bottom: 0;
+}
+.site-footer .site-info .contact-footer-col-menu .separator-contact-info {
+  width: 35%;
+  margin: 0 auto;
+}
+.site-footer .site-info .contact-footer-col-menu .contact-phone a {
+  text-decoration: none;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.25rem;
+}
+.site-footer .site-info .contact-footer-col-menu .contact-phone a:hover {
+  text-decoration: underline;
+}
+.site-footer .site-copyright {
+  background-color: var(--bs-color-footer-copyright);
+  min-height: 200px;
+}
+.site-footer .site-copyright .copyright-disclaimer {
+  color: #FFFFFF;
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
 }/*# sourceMappingURL=main.css.map */

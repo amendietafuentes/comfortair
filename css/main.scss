@@ -135,10 +135,16 @@ $secondary: rgb(10,
 143);
 $gray: #8c94a3;
 $gray-border: #d1d1d1;
+$color-footer-copyright: #001a3a;
+$color-footer-site-info: #001536;
+$bg-color-contact-footer-menu: #002c63;
 $theme-colors: ( "primary": $primary,
 "gray": $gray,
 "secondary": $secondary,
-"gray-border": $gray-border);
+"gray-border": $gray-border,
+"color-footer-copyright": $color-footer-copyright,
+"color-footer-site-info": $color-footer-site-info,
+"bg-color-contact-footer-menu": $bg-color-contact-footer-menu);
 // Create your own map
 $custom-color: ( "icon-background": rgb(230,
 30,
@@ -301,6 +307,80 @@ a.call-to-action {
         }
         .excerpt-post {
             font-family: 'FONTSPRING DEMO - Visby CF Light Regular';
+        }
+    }
+}
+
+
+/***********
+* Add custom style footer
+************/
+
+.site-footer {
+    color: #FFFFFF;
+    padding: 0.5rem 0;
+    .site-info {
+        background-color: var(--bs-color-footer-site-info);
+        h4 {
+            font-size: 1.75rem;
+        }
+        h4.title-communities-col-one {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
+        }
+        #menu-communities-nav-one,
+        #menu-communities-nav-two,
+        #menu-primary-menu {
+            list-style-type: square;
+            padding-top: 2.5rem !important;
+            li {
+                color: #FFFFFF;
+                padding: 0.5rem 0;
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    display: block;
+                    font-family: 'FONTSPRING DEMO - Visby CF Light Regular';
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .contact-footer-col-menu {
+            background-color: var(--bs-bg-color-contact-footer-menu);
+            .address-contact {
+                font-family: 'FONTSPRING DEMO - Visby CF Light Regular';
+                margin: 0.5rem 0;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            .separator-contact-info {
+                width: 35%;
+                margin: 0 auto;
+            }
+            .contact-phone {
+                a {
+                    text-decoration: none;
+                    display: block;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 2.25rem;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .site-copyright {
+        background-color: var(--bs-color-footer-copyright);
+        min-height: 200px;
+        .copyright-disclaimer {
+            color: #FFFFFF;
+            font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
         }
     }
 }
