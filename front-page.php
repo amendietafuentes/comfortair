@@ -25,18 +25,51 @@ get_header();
 					?>
 				</div>
 			</div>
+			<div class="container-fluid position-relative pt-5">
+				<div class="row position-absolute top-0 start-50 translate-middle">
+					<div class="col-md-3">
+						<?php 
+							$airConditioningServices = get_field('air_conditioning_icon');
+						?>
+						<img class="img-fluid mx-auto d-block" src="<?php echo $airConditioningServices['url']; ?>" alt="Air Conditioning Service" title="Air Conditioning Service">
+						<h3 class="title-icon text-center"><?php the_field( 'air_conditioning_text' ); ?></h3>
+					</div>
+					<div class="col-md-3">
+						<?php 
+							$heatingServices = get_field('heating_services_icon');
+						?>
+						<img class="img-fluid mx-auto d-block" src="<?php echo $heatingServices['url']; ?>" alt="Heating Services" title="Heating Services">
+						<h3 class="title-icon text-center"><?php the_field( 'heating_services_text' ); ?></h3>
+					</div>
+					<div class="col-md-3">
+						<?php 
+							$systemRepairServices = get_field('system_repair_services_copy');
+						?>
+						<img class="img-fluid mx-auto d-block" src="<?php echo $systemRepairServices['url']; ?>" alt="System Repair Services" title="System Repair Services">
+						<h3 class="title-icon text-center"><?php the_field( 'system_repair_services_text' ); ?></h3>
+					</div>
+					<div class="col-md-3">
+						<?php 
+							$indoorAirQuality = get_field('indoor_air_quality_icon');
+						?>
+						<img class="img-fluid mx-auto d-block" src="<?php echo $indoorAirQuality['url']; ?>" alt="Indoor Air Quality" title="Indoor Air Quality">
+						<h3 class="title-icon text-center"><?php the_field( 'indoor_air_quality_text' ); ?></h3>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<?php
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+			/*get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
-			endif;
+			endif;*/
 
 		endwhile; // End of the loop.
 		?>
@@ -101,8 +134,25 @@ get_header();
 							$homeShuduleServiceBanner = get_field('homepage_shedule_service_banner');
 						?>
 						<a href="tel: <?php the_field('shedule_service_phone_number'); ?>">
-							<img class="img-responsive" src="<?php echo $homeShuduleServiceBanner['url']; ?>" alt="Shedule Service" title="Shedule Service">
+							<img class="img-fluid" src="<?php echo $homeShuduleServiceBanner['url']; ?>" alt="Shedule Service" title="Shedule Service">
 						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-us" style="background-image: url(<?php $backgroundContactUs = get_field( 'contact_us_background' ); echo $backgroundContactUs['url'];?>);">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="contact-us-title text-center">
+							<?php the_field( 'contact_us_title' ); ?>
+						</h2>
+						<div class="contact-us-form">
+							<?php 
+								echo do_shortcode( '[contact-form-7 id="137" title="Contact Us Form"]' );
+							?>
+						</div>
 					</div>
 				</div>
 			</div>

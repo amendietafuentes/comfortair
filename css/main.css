@@ -11044,6 +11044,12 @@ textarea.form-control-lg {
 /***********
 * Add custom style theme
 ************/
+body,
+html {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 body {
   font-family: "FONTSPRING DEMO - Visby CF Medium Regular";
   font-weight: bold;
@@ -11056,7 +11062,12 @@ ol {
   padding-left: 0;
 }
 
-a.call-to-action {
+.pc-5 {
+  padding: 5rem;
+}
+
+a.call-to-action,
+.btn-contact {
   background-color: var(--bs-primary);
   font-family: "FONTSPRING DEMO - Visby CF Medium Regular";
   font-size: 0.8rem;
@@ -11167,6 +11178,13 @@ a.call-to-action {
   font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
 }
 
+.title-icon {
+  font-size: 1.2rem;
+  color: var(--bs-secondary);
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+  padding: 0.5rem 0;
+}
+
 /***********
 * Add custom style recent posts
 ************/
@@ -11187,6 +11205,46 @@ a.call-to-action {
 }
 .recent-post .content .excerpt-post {
   font-family: "FONTSPRING DEMO - Visby CF Light Regular";
+}
+
+/***********
+* Add custom style contact us
+************/
+.contact-us {
+  background-position: center;
+  background-size: cover;
+  height: 680px;
+  padding-top: 5rem;
+}
+.contact-us .contact-us-title {
+  color: #FFFFFF;
+  font-size: 3.2rem;
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+}
+.contact-us .contact-us-form {
+  max-width: 875px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+.contact-us .input {
+  margin: 0 0 0.95rem 0;
+}
+.contact-us .input input {
+  height: 50px;
+  padding: 0.5rem;
+}
+.contact-us textarea {
+  padding: 0.5rem;
+}
+.contact-us .btn-contact {
+  background-color: var(--bs-primary);
+  font-family: "FONTSPRING DEMO - Visby CF Medium Regular";
+  font-size: 1rem;
+  color: #FFFFFF;
+  padding: 0.8rem 4rem;
+  border-radius: 5px;
+  border: none;
 }
 
 /***********

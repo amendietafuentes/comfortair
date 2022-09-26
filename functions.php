@@ -267,3 +267,22 @@ function custom_footer_contact_menu_widget_one(){
  }
 
  add_action('widgets_init', 'custom_footer_contact_menu_widget_one');
+
+
+  /**
+ * Logo Copyright Column
+ */
+function custom_footer_copyright_logo_widget_one(){
+	$args = array(
+		'id' 				=> 'footer-widget-logo-copyright-col-one',
+		'name' 				=> __('Footer Logo Copyright Column One' , 'text_domain'),
+		'description' 		=> __('Column One', 'text_domain'),
+		'before_title'	 	=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'		=> '</div>'
+	);
+	register_sidebar( $args );
+ }
+
+ add_action('widgets_init', 'custom_footer_copyright_logo_widget_one');

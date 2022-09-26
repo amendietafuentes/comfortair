@@ -46,11 +46,13 @@
 		<div class="site-copyright">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-
+					<div class="col-md-6 p-4 d-flex justify-content-start align-items-start">
+						<?php 
+							dynamic_sidebar( 'footer-widget-logo-copyright-col-one' );
+						?>
 					</div>
-					<div class="col-md-6">
-						<p class="copyright-disclaimer">&copy; <?php echo date("Y"); ?>. Comfort Air Heating and Cooling. All Rights Reserved.</p>
+					<div class="col-md-6  p-4 d-flex justify-content-end align-items-center">
+						<p class="copyright-disclaimer align-middle">&copy; <?php echo date("Y"); ?>. Comfort Air Heating and Cooling. All Rights Reserved.</p>
 					</div>
 				</div>
 			</div>
