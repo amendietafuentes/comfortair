@@ -199,6 +199,15 @@ a.call-to-action,
     color: var(--bs-secondary);
 }
 
+.content-blocks {
+    font-family: 'FONTSPRING DEMO - Visby CF Light Regular';
+}
+
+.title-block-4 {
+    font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
+    color: var(--bs-secondary);
+}
+
 .top-bar {
     font-size: 0.95rem;
     &__social {
@@ -326,6 +335,55 @@ a.call-to-action,
         .excerpt-post {
             font-family: 'FONTSPRING DEMO - Visby CF Light Regular';
         }
+    }
+}
+
+
+/***********
+* Add custom style new wquipment design
+************/
+
+#new-equipment-design {
+    ul {
+        padding: 1.25rem 0;
+        line-height: 1.8rem;
+        list-style-type: none;
+        margin-left: 0;
+        li {
+            i {
+                color: var(--bs-primary);
+                font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
+                font-size: 1.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    a.call-to-action {
+        padding: 0.75rem 2.5rem;
+    }
+}
+
+
+/***********
+* Add custom style residential products
+************/
+
+#residencial-products {
+    margin-top: 8rem;
+    .residencial-product {
+        background-color: #FFFFFF;
+        padding: 5rem;
+        border: 1px solid var(--bs-gray-border);
+        margin-bottom: 1.5rem;
+    }
+    .title-residential-products {
+        color: var(--bs-secondary);
+        font-size: 3.2rem;
+        font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
+    }
+    .title-residencial-product {
+        font-size: 1.2rem;
+        padding: 1.5rem 0;
     }
 }
 

@@ -15,6 +15,11 @@
 get_header();
 ?>
 
+	<?php
+			while ( have_posts() ) :
+				the_post();
+	?>
+
 	<main id="primary" class="site-main">
 
 		<div class="container-fluid">
@@ -61,18 +66,86 @@ get_header();
 		</div>
 
 		<?php
-		while ( have_posts() ) :
+		/*while ( have_posts() ) :
 			the_post();
 
-			/*get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
-			endif;*/
+			endif;
 
-		endwhile; // End of the loop.
+		endwhile;*/ // End of the loop.
 		?>
+
+		<section id="residencial-products">
+			<div class="container pt-5 pb-5">
+				<div class="row ps-5 pe-5">
+					<div class="col-md-6 justify-content-start align-items-center pb-2">
+						<h2 class="title-residential-products">Residential Products</h2>
+					</div>
+					<div class="col-md-6 d-flex justify-content-end align-items-center pb-2">
+						<a href="#" class="call-to-action">View All Products <i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="row ps-5 pe-5">
+					<div class="col-md-4 residencial-product">
+						<?php 
+							$residencialProductOne = get_field('residencial_producto_one');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $residencialProductOne['url']; ?>" alt="" title=""></a>
+						<h3 class="title-residencial-product text-center">Our Lennox System</h3>
+					</div>
+					<div class="col-md-4 residencial-product">
+						<?php 
+							$residencialProductTwo = get_field('residencial_producto_two');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $residencialProductTwo['url']; ?>" alt="" title=""></a>
+						<h3 class="title-residencial-product text-center">Our Amana System</h3>
+					</div>
+					<div class="col-md-4 residencial-product">
+						<?php 
+							$residencialProductThree = get_field('residencial_producto_three');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $residencialProductThree['url']; ?>" alt="" title=""></a>
+						<h3 class="title-residencial-product text-center">Our Amana System</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<?php 
+							$productRightProduct = get_field('product_right_block');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $productRightProduct['url']; ?>" alt="" title=""></a>
+					</div>
+					<div class="col-md-6">
+						<?php 
+							$productDiscountLeftBlock = get_field('product_right_block_copy');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $productDiscountLeftBlock['url']; ?>" alt="" title=""></a>
+					</div>
+				</div>
+			</div>	
+		</section><!-- #residencial products -->
+
+		<section id="new-equipment-design">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<?php 
+							$newEquipmentDesignImage = get_field('new_equipment_design_image');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $newEquipmentDesignImage['url']; ?>" alt="" title=""></a>
+					</div>
+					<div class="col-md-6 ps-5">
+						<?php 
+							the_field( 'new_equipment_content' )
+						?>
+					</div>
+				</div>
+			</div>
+		</section><!--#new equipment design -->
 
 		<section id="blog-recent-posts">
 			<div class="container pt-5 pb-5">
@@ -169,6 +242,10 @@ get_header();
 		</div>
 
 	</main><!-- #main -->
+
+	<?php
+		endwhile; // End of the loop.
+	?>
 
 <?php
 
