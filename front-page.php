@@ -41,6 +41,59 @@ get_header();
 		endwhile; */// End of the loop.
 		?>
 
+		<section id="blog-recent-posts">
+			<div class="container pt-5 pb-5">
+				<h2 class="title-latest-posts title-blocks text-center pt-5 pb-5">Latest News</h2>
+				<div class="row">
+					<?php 
+						// Define our WP Query Parameters
+						$the_query = new WP_Query('posts_per_page=3');
+					?>
+
+					<?php 
+						//Start our WP Query
+						while( $the_query -> have_posts() ) : $the_query -> the_post(); 
+					?>
+
+						<div class="col-md-4">
+							<article class="recent-post">
+								<?php	
+									echo get_the_post_thumbnail(get_the_ID(),'full');
+								?>
+								<div class="content">
+									<a href="<?php the_permalink() ?>">
+									<h2 class="title-post">
+										<?php the_title();?>
+									</h2>
+									</a>
+									<p class="excerpt-post">
+										<?php
+											// Display the Post Excerpt
+											$excerpt = get_the_excerpt(); 
+											$string_more = "...";
+
+											$excerpt = substr( $excerpt, 0, 280 ); // Only display first 260 characters of excerpt
+											$result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
+											echo $result . $string_more;
+										?>
+									</p>
+									<a class="call-to-action" href="<?php the_permalink();?>">Read More</a>
+								</div>
+
+							</article>
+						</div>
+
+					<?php
+						// Repeat the process and reset once it hits the limit
+						endwhile;
+						wp_reset_postdata();
+					?>
+
+				</div>
+			</div>
+		</section>
+
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 pt-5 pb-5">

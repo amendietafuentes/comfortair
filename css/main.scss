@@ -134,9 +134,11 @@ $secondary: rgb(10,
 69,
 143);
 $gray: #8c94a3;
+$gray-border: #d1d1d1;
 $theme-colors: ( "primary": $primary,
 "gray": $gray,
-"secondary": $secondary);
+"secondary": $secondary,
+"gray-border": $gray-border);
 // Create your own map
 $custom-color: ( "icon-background": rgb(230,
 30,
@@ -162,6 +164,22 @@ ul,
 ol {
     margin-left: 1.5rem;
     padding-left: 0;
+}
+
+a.call-to-action {
+    background-color: var(--bs-primary);
+    font-family: 'FONTSPRING DEMO - Visby CF Medium Regular';
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.65rem 1.8rem;
+    border-radius: 5px;
+}
+
+.title-blocks {
+    font-size: 3.2rem;
+    font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
+    color: var(--bs-secondary);
 }
 
 .top-bar {
@@ -262,3 +280,27 @@ ol {
 }
 
 .btn-hompage-slider {}
+
+
+/***********
+* Add custom style recent posts
+************/
+
+.recent-post {
+    border: 1px solid var(--bs-gray-border);
+    max-width: 375px;
+    .content {
+        padding: 1rem;
+        a {
+            text-decoration: none;
+        }
+        .title-post {
+            font-size: 1.2rem;
+            color: var(--bs-secondary);
+            font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
+        }
+        .excerpt-post {
+            font-family: 'FONTSPRING DEMO - Visby CF Light Regular';
+        }
+    }
+}
