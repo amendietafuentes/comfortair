@@ -11077,19 +11077,24 @@ a.call-to-action,
   border-radius: 5px;
 }
 
-.title-blocks {
+.title-block-primary {
   font-size: 3.2rem;
   font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
   color: var(--bs-secondary);
 }
 
-.content-blocks {
+.content-block {
   font-family: "FONTSPRING DEMO - Visby CF Light Regular";
 }
 
-.title-block-4 {
+.title-block-secundary {
   font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
   color: var(--bs-secondary);
+}
+
+.subtitle {
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+  color: #000000;
 }
 
 .top-bar {
@@ -11258,6 +11263,39 @@ a.call-to-action,
 }
 
 /***********
+* Add custom style Innovate for top efficiency
+************/
+#innovate-service-efficiency {
+  margin: 0.5rem 0;
+}
+#innovate-service-efficiency .bg-image {
+  background-position: top center;
+  background-size: cover;
+  background-color: #FFFFFF;
+  height: 678px;
+}
+#innovate-service-efficiency .content {
+  background-color: #f0edeb;
+  padding: 2.8rem 2rem;
+  margin: 5rem 0;
+}
+#innovate-service-efficiency ul {
+  padding: 1.25rem 0;
+  line-height: 1.8rem;
+  list-style-type: none;
+  margin-left: 0;
+}
+#innovate-service-efficiency ul li i {
+  color: var(--bs-primary);
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+#innovate-service-efficiency a.call-to-action {
+  padding: 0.75rem 2.5rem;
+}
+
+/***********
 * Add custom style contact us
 ************/
 .contact-us {
@@ -11278,7 +11316,7 @@ a.call-to-action,
   padding-top: 5rem;
 }
 .contact-us .input {
-  margin: 0 0 0.95rem 0;
+  margin: 0 0 1.2rem 0;
 }
 .contact-us .input input {
   height: 50px;

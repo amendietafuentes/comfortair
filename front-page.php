@@ -16,8 +16,8 @@ get_header();
 ?>
 
 	<?php
-			while ( have_posts() ) :
-				the_post();
+		while ( have_posts() ) :
+		the_post();
 	?>
 
 	<main id="primary" class="site-main">
@@ -140,16 +140,32 @@ get_header();
 					</div>
 					<div class="col-md-6 ps-5">
 						<?php 
-							the_field( 'new_equipment_content' )
+							the_field( 'new_equipment_content' );
 						?>
 					</div>
 				</div>
 			</div>
 		</section><!--#new equipment design -->
 
+		<section id="innovate-service-efficiency">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 bg-image" style="background-image: url(<?php $innovateServiceEfficiency = get_field('innovate_service_image'); echo $innovateServiceEfficiency['url']?>); ">
+					</div>
+					<div class="col-md-6 p-0">
+						<div class="content">
+							<?php 
+								the_field( 'innovate_service_content' );
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--#innovate service efficiency -->
+
 		<section id="blog-recent-posts">
-			<div class="container pt-5 pb-5">
-				<h2 class="title-latest-posts title-blocks text-center pt-5 pb-5">Latest News</h2>
+			<div class="container pt-3 pb-5">
+				<h2 class="title-latest-posts title-block-primary text-center pt-5 pb-5">Latest News</h2>
 				<div class="row">
 					<?php 
 						// Define our WP Query Parameters
@@ -200,7 +216,7 @@ get_header();
 		</section>
 		
 		<section class="shedule-service-banner">
-			<div class="container">
+			<div class="container pb-5 pt-5">
 				<div class="row">
 					<div class="col-md-12">
 						<?php 
