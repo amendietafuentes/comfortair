@@ -11200,6 +11200,55 @@ a.call-to-action,
 }
 
 /***********
+* Add custom style OVER YEARS Block
+************/
+#over-years {
+  margin-top: 7.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  /*.border-block {
+      border: 5px solid #e51e38;
+      border-radius: 25px;
+  }*/
+}
+#over-years .title-block {
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+  font-size: 3.2rem;
+  color: var(--bs-secondary);
+}
+#over-years .title-block .number-title {
+  color: var(--bs-primary);
+  font-size: 5rem;
+}
+#over-years .title-block-primary {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--bs-primary);
+  font-size: 2rem;
+}
+#over-years .icons-block {
+  margin-top: 1.5rem;
+}
+#over-years .icons-block div {
+  background-color: #f7f9fc;
+  padding: 0.5rem;
+  border-right: 1px solid var(--bs-gray);
+}
+#over-years .icons-block div:last-child {
+  border-right: none;
+}
+#over-years .icons-block .icon {
+  max-height: 111px;
+  margin: 0.85rem 0;
+}
+#over-years .icons-block .label-icon {
+  text-align: center;
+  color: var(--bs-secondary);
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+  font-size: 1.2rem;
+}
+
+/***********
 * Add custom style recent posts
 ************/
 .recent-post {
@@ -11240,11 +11289,49 @@ a.call-to-action,
   padding: 0.75rem 2.5rem;
 }
 
+#residential-comercial-services {
+  margin-top: 5rem;
+}
+#residential-comercial-services .title-block {
+  color: #FFFFFF;
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+  font-size: 3.2rem;
+}
+#residential-comercial-services .content {
+  color: #FFFFFF;
+  padding: 0 2.5rem;
+  font-size: 1rem;
+  font-family: "FONTSPRING DEMO - Visby CF Medium Regular";
+}
+#residential-comercial-services .content ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+#residential-comercial-services .content ul li {
+  line-height: 2.2rem;
+}
+#residential-comercial-services .content ul li i {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+}
+#residential-comercial-services #h5vp_player .plyr__control--overlaid {
+  background-color: var(--bs-primary);
+  padding: 2.5rem;
+  border-radius: 50%;
+}
+
+.bg-image {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 775px;
+}
+
 /***********
 * Add custom style residential products
 ************/
 #residencial-products {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 #residencial-products .residencial-product {
   background-color: #FFFFFF;
@@ -11259,7 +11346,7 @@ a.call-to-action,
 }
 #residencial-products .title-residencial-product {
   font-size: 1.2rem;
-  padding: 1.5rem 0;
+  padding: 5rem 0 0;
 }
 
 /***********
