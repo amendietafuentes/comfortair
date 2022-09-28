@@ -22,6 +22,14 @@
 								<?php
 									dynamic_sidebar( 'footer-widget-communities-col-one' );
 								?>
+								<ul class="top-bar__social">
+									<li><i class="bi bi-facebook rounded-circle social"></i></li>
+									<li><i class="bi bi-youtube rounded-circle social"></i></li>
+									<li><i class="bi bi-google rounded-circle social"></i></li>
+									<li><i class="bi bi-yelp rounded-circle social"></i></li>
+									<li><i class="bi bi-instagram rounded-circle social"></i></li>
+									<li><i class="bi bi-rss-fill rounded-circle social"></i></li>
+								</ul>
 							</div>
 							<div class="col-md-6">
 								<?php
