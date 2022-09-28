@@ -11199,6 +11199,39 @@ a.call-to-action,
   padding: 0.5rem 0;
 }
 
+#testimonials .title {
+  color: var(--bs-secondary);
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+  font-size: 3.2rem;
+}
+#testimonials .testimonial {
+  border: 1px solid #dedede;
+  padding: 0;
+  max-width: 40%;
+  margin: 0 auto;
+}
+#testimonials .subtitle {
+  font-size: 1.4rem;
+  color: var(--bs-primary);
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+}
+#testimonials p {
+  font-family: "FONTSPRING DEMO - Visby CF Light Regular";
+}
+#testimonials .testimonial-content {
+  padding: 1rem 2.5rem;
+}
+#testimonials .author-testimonial {
+  margin-top: 2.5rem;
+  padding: 1rem 2.5rem;
+}
+#testimonials .author-testimonial span:first-child {
+  font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
+}
+#testimonials .author-testimonial span:last-child {
+  font-family: "FONTSPRING DEMO - Visby CF Light Regular";
+}
+
 /***********
 * Add custom style OVER YEARS Block
 ************/
@@ -11215,10 +11248,15 @@ a.call-to-action,
   font-family: "FONTSPRING DEMO - Visby CF Extra Bold Regular";
   font-size: 3.2rem;
   color: var(--bs-secondary);
+  margin-bottom: 0;
 }
 #over-years .title-block .number-title {
   color: var(--bs-primary);
   font-size: 5rem;
+}
+#over-years .rating .bi {
+  color: var(--bs-secondary);
+  padding: 0 0.25rem;
 }
 #over-years .title-block-primary {
   text-transform: uppercase;

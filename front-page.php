@@ -85,7 +85,21 @@ get_header();
 				<div class="row border-block">
 					<div class="col-md-12">
 						<h2 class="title-block text-center">Over <span class="number-title">30</span> Years</h2>
-						<span class="rating"></span>
+						<span class="rating text-center d-block mb-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+						</span>
 						<h3 class="title-block-primary text-center">Service & Experience</h3>
 					</div>
 					<div class="row icons-block">
@@ -273,6 +287,47 @@ get_header();
 			</div>
 		</section><!--#innovate service efficiency -->
 
+		<section id="testimonials"> 
+			<div class="container">
+				<div class="row mb-5 pb-5">
+					<h2 class="title text-center"><?php the_field( 'title_testimonials_block' ); ?></h2>
+					<h4 class="subtitle text-center"><?php the_field( 'subtitle_testimonials_block' ); ?></h4>
+				</div>
+				<div class="row">
+					<div class="col-md-6 testimonial">
+						<div class="img-testimonial">
+						<?php 
+							$imageTestimonialBlock = get_field('testimonial_image_block');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $imageTestimonialBlock['url']; ?>" alt="" title=""></a>
+						</div>
+						<div class="testimonial-content">
+							<?php the_field( 'testimonial_content_block' ); ?>
+						</div>
+						<div class="author-testimonial">
+							<span><?php the_field( 'testimonial_first_name_block' ); ?></span>
+							<span><?php the_field( 'testimonial_lastname_block' ); ?></span>
+						</div>
+					</div>
+					<div class="col-md-6 testimonial">
+						<div class="img-testimonial">
+							<?php 
+								$imageTestimonialBlock = get_field('testimonial_image_block');
+							?>
+							<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $imageTestimonialBlock['url']; ?>" alt="" title=""></a>
+						</div>
+						<div class="testimonial-content">
+							<?php the_field( 'testimonial_content_block' ); ?>
+						</div>
+						<div class="author-testimonial">
+							<span><?php the_field( 'testimonial_first_name_block' ); ?></span>
+							<span><?php the_field( 'testimonial_lastname_block' ); ?></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--#testimonials -->
+
 		<section id="blog-recent-posts">
 			<div class="container pt-3 pb-5">
 				<h2 class="title-latest-posts title-block-primary text-center pt-5 pb-5">Latest News</h2>
@@ -323,7 +378,7 @@ get_header();
 
 				</div>
 			</div>
-		</section>
+		</section><!--#recent posts -->
 		
 		<section class="shedule-service-banner">
 			<div class="container pb-5 pt-5">
@@ -338,7 +393,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-		</section>
+		</section><!--#home banner service -->
 
 		<section class="contact-us" style="background-image: url(<?php $backgroundContactUs = get_field( 'contact_us_background' ); echo $backgroundContactUs['url'];?>);">
 			<div class="container-fluid">
