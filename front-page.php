@@ -171,7 +171,12 @@ get_header();
 
 			<div class="container">
 				<div class="row">
-
+					<div class="col-md-12">
+					<?php 
+							$imageWeAreForAReasonBlock = get_field('we_are_reason_image_background_block');
+						?>
+						<a href="#"><img class="img-fluid mx-auto d-block" src="<?php echo $imageWeAreForAReasonBlock['url']; ?>" alt="" title=""></a>
+					</div>
 				</div>
 			</div>
 

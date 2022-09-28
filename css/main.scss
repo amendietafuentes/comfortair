@@ -310,7 +310,27 @@ a.call-to-action,
     font-family: 'FONTSPRING DEMO - Visby CF Extra Bold Regular';
 }
 
-.btn-hompage-slider {}
+div#n2-ss-2 .n2-font-176464dee0eea5b1ac11b21dab9b24d2-link a:after {
+    content: "\F138";
+    font-size: 0.8rem;
+    color: #FFF;
+}
+
+.btn-hompage-slider {
+    font-size: 5rem;
+    a::before {
+        content: "\F138" !important;
+        color: #FFF !important;
+        font-family: 'Glyphicons Halflings' !important;
+    }
+}
+
+div#n2-ss-2 .n2-ss-button-container--non-full-width,
+div#n2-ss-2 .n2-ss-button-container--non-full-width a::before {
+    content: "\f138" !important;
+    color: #FFF !important;
+    font-family: 'Glyphicons Halflings';
+}
 
 .title-icon {
     font-size: 1.2rem;
